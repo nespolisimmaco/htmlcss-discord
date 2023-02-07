@@ -1,0 +1,208 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CUSTOM PROPERTIES */
+/* Colors */
+:root {
+    --lightblue: #add8e6;
+    --orange: #daa520;
+    --darkblue: #00008b;
+    --fuchsia: #ee82ee;
+    --blue: #1e90ff;
+    --pink: #ffc0cb;
+    --grey: #d3d3d3;
+    --darkgreen: #228b22;
+    --coral: #f08080;
+    --green: #20b2aa;
+    --lightgreen: #7fffd4;
+    --black: #23272a;
+}
+
+/* Border */
+:root {
+    --blackborder: 2px dashed black;
+    --whiteborder: 2px dashed white;
+}
+
+/* GENERAL */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1100px;
+    /* debug */
+    border: var(--blackborder);
+}
+
+.flex {
+    display: flex;
+}
+
+/* HEADER */
+header {
+    height: 50px;
+    padding: 10px;
+    /* debug */
+    background-color: var(--lightblue);
+}
+
+.container.header-container {
+    
+    /* debug */
+    background-color: var(--orange);
+    border: var(--blackborder);
+}
+
+.header-nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    width: 20%;
+    padding: 5px;
+    /* debug */
+    border-right: var(--blackborder);
+}
+
+.header-nav.flex {
+    width: 60%;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 5px;
+    /* debug */
+    border-left: 2px dashed black;
+    border-right: 2px dashed black;
+
+}
+
+.login {
+    width: 20%;
+    text-align: right;
+    padding: 5px;
+    /* debug */
+    border-left: 2px dashed black;
+}
+
+/* MAIN */
+/* Blue section */
+.jumbotron-section {
+    background-color: var(--darkblue);
+    padding: 35px 0;
+}
+
+.jumbotron {
+    width: 60%;
+    margin: 0 auto;
+    min-height: 300px;
+    /* debug */
+    background-color: var(--fuchsia);
+    border: var(--blackborder);
+}
+
+/* White section */
+.container.section-container{
+    padding: 40px 0;
+    /* debug */
+    border: var(--blackborder);
+}
+
+/* blue square */
+.primary-col {
+    min-height: 500px;
+    width: 60%;
+    /* debug */
+    background-color: var(--blue);
+    border: var(--blackborder);
+}
+
+/* pink square */
+.secondary-col {
+    min-height: 500px;
+    width: 40%;
+    /* debug */
+    background-color: var(--pink);
+    border: var(--blackborder);
+}
+
+/* Grey section */
+.grey-section {
+    /* debug */
+    background-color: var(--grey);
+}
+
+/* Dark green square */
+.dark-green {
+    min-height: 600px;
+    /* debug */
+    border: var(--blackborder);
+    background-color: var(--darkgreen);
+}
+
+/* First Black section */
+.black-section {
+    /* debug */
+    background-color: var(--black);
+    border: 2px solid white;
+}
+
+.wrap {
+    /* debug */
+    border: var(--blackborder);
+}
+
+/* coral square */
+.coral {
+    width: 30%;
+    min-height: 500px;
+    /* debug */
+    background-color: var(--coral);
+    border: var(--blackborder);
+}
+
+/* green square */
+.green {
+    min-height: 500px;
+    width: calc((100% - 30%) / 4);
+    /* debug */
+    background-color: var(--green);
+    border: var(--whiteborder);
+}
+
+/* FOOTER */
+/* Second black section */
+.container.footer-section {
+    
+    min-height: 80px;
+    margin-top: 25px;
+    /* debug */
+    background-color: var(--lightgreen);
+}
+
+.footer-section.flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    padding: 5px;
+    /* debug */
+    border: var(--blackborder);
+    background-color: var(--pink);
+}
+
+.footer-button {
+    padding: 5px;
+    /* debug */
+    border: var(--blackborder);
+    background-color: var(--pink);
+}
