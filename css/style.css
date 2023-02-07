@@ -192,14 +192,14 @@ header {
     border: var(--blackborder); */
 }
 
-/* White section */
+/* Channels section */
 .container.section-container{
     padding: 40px 0;
     /* debug */
     border: var(--blackborder);
 }
 
-/* blue square */
+/* Image column */
 .primary-col {
     width: 60%;
     /* debug */
@@ -208,13 +208,27 @@ header {
     border: var(--blackborder);
 }
 
-/* pink square */
+/* Text column */
 .secondary-col {
     width: 40%;
+    padding: 20px;
     /* debug */
     min-height: 500px;
     background-color: var(--pink);
     border: var(--blackborder);
+}
+
+.secondary-col-section > h2 {
+    color: black;
+    font-size: 3.5rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.secondary-col-section > p {
+    color: black;
+    text-align: left;
+    line-height: 1.5rem;
 }
 
 /* Grey section */
