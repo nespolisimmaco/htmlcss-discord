@@ -66,9 +66,36 @@ body {
     border-radius: 20px;
 }
 
+.big-button {
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    border-radius: 25px;
+    padding: 12px;
+}
+
 .white-button {
     background-color: white;
     color: black;
+}
+
+.white-button > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.dark-blue-button {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+.dark-blue-button > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.jumbo-buttons {
+    margin: .8rem 0;
 }
 
 /* HEADER */
@@ -129,44 +156,40 @@ header {
     border-left: 2px dashed black;
 }
 
-.login a {
-    text-decoration: none;
-    color: inherit;
-}
-
-
 /* MAIN */
 /* Blue section */
 .jumbotron-section {
     background-image: url(../img/jumbo.png);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 35px 0;
+    padding: 35px 0 100px;
 }
 
 .jumbotron {
     width: 68%;
     margin: 0 auto;
-    padding-top: 75px;
-    /* debug */
+    padding-top: 130px;
+    /* debug
     min-height: 300px;
     background-color: var(--fuchsia);
-    border: var(--blackborder);
+    border: var(--blackborder); */
 }
 
 .jumbo h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
 }
 
 .jumbo p {
+    font-weight: 500;
     line-height: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .jumbo {
     text-align: center;
-    /* debug */
-    border: var(--blackborder);
+    /* debug
+    border: var(--blackborder); */
 }
 
 /* White section */
