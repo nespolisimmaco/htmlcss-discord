@@ -5,9 +5,14 @@
     box-sizing: border-box;
 }
 
-/* CUSTOM PROPERTIES */
+img {
+    max-width: 100%;
+}
+
+/* VARIABLES */
 /* Colors */
 :root {
+    /* Layout colors */
     --lightblue: #add8e6;
     --orange: #daa520;
     --darkblue: #00008b;
@@ -20,6 +25,12 @@
     --green: #20b2aa;
     --lightgreen: #7fffd4;
     --black: #23272a;
+    /* End Layout colors */
+
+    /* Colors */
+    --header-blue: #255ee9;
+    --dark-blue: #23272a;
+    --violet: #7289da;
 }
 
 /* Border */
@@ -29,6 +40,11 @@
 }
 
 /* GENERAL */
+body {
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -41,50 +57,69 @@
     display: flex;
 }
 
+.small-button {
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    padding: 0.6rem;
+    border-radius: 20px;
+}
+
+.white-button {
+    background-color: white;
+    color: black;
+}
+
 /* HEADER */
 header {
-    height: 50px;
+    height: 60px;
     padding: 10px;
     /* debug */
-    background-color: var(--lightblue);
+    background-color: var(--header-blue);
 }
 
 .container.header-container {
-    
-    /* debug */
-    background-color: var(--orange);
-    border: var(--blackborder);
-}
 
+    /* debug
+    background-color: var(--orange);
+    border: var(--blackborder); */
+} 
+
+/* Navigation menu */
 .header-nav ul {
     list-style-type: none;
     display: flex;
-    gap: 10px;
+}
+
+.nav-links > li {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
 }
 
 .nav-links li a{
     text-decoration: none;
-    color: black;
-}
-
-.logo {
-    width: 20%;
-    padding: 5px;
-    /* debug */
-    border-right: var(--blackborder);
+    color: white;
 }
 
 .header-nav.flex {
     width: 60%;
     justify-content: center;
+    align-items: center;
     flex-grow: 1;
-    padding: 5px;
-    /* debug */
+    /* debug
     border-left: 2px dashed black;
-    border-right: 2px dashed black;
-
+    border-right: 2px dashed black; */
 }
 
+/* Logo */
+.logo {
+    width: 20%;
+    padding: 5px;
+    /* debug
+    border-right: var(--blackborder); */
+}
+
+/* Login */
 .login {
     width: 20%;
     text-align: right;
@@ -93,18 +128,26 @@ header {
     border-left: 2px dashed black;
 }
 
+.login a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 /* MAIN */
 /* Blue section */
 .jumbotron-section {
-    background-color: var(--darkblue);
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 35px 0;
 }
 
 .jumbotron {
     width: 60%;
     margin: 0 auto;
-    min-height: 300px;
     /* debug */
+    min-height: 300px;
     background-color: var(--fuchsia);
     border: var(--blackborder);
 }
@@ -118,18 +161,18 @@ header {
 
 /* blue square */
 .primary-col {
-    min-height: 500px;
     width: 60%;
     /* debug */
+    min-height: 500px;
     background-color: var(--blue);
     border: var(--blackborder);
 }
 
 /* pink square */
 .secondary-col {
-    min-height: 500px;
     width: 40%;
     /* debug */
+    min-height: 500px;
     background-color: var(--pink);
     border: var(--blackborder);
 }
@@ -142,8 +185,8 @@ header {
 
 /* Dark green square */
 .dark-green {
-    min-height: 600px;
     /* debug */
+    min-height: 600px;
     border: var(--blackborder);
     background-color: var(--darkgreen);
 }
@@ -163,17 +206,17 @@ header {
 /* coral square */
 .coral {
     width: 30%;
-    min-height: 500px;
     /* debug */
+    min-height: 500px;
     background-color: var(--coral);
     border: var(--blackborder);
 }
 
 /* green square */
 .green {
-    min-height: 500px;
     width: calc((100% - 30%) / 4);
     /* debug */
+    min-height: 500px;
     background-color: var(--green);
     border: var(--whiteborder);
 }
@@ -182,9 +225,9 @@ header {
 /* Second black section */
 .container.footer-section {
     
-    min-height: 80px;
     margin-top: 25px;
     /* debug */
+    min-height: 80px;
     background-color: var(--lightgreen);
 }
 
