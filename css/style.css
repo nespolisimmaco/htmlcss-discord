@@ -19,15 +19,15 @@ img {
     --fuchsia: #ee82ee;
     --blue: #1e90ff;
     --pink: #ffc0cb;
-    --grey: #f6f6f6;
     --darkgreen: #228b22;
     --coral: #f08080;
     --green: #20b2aa;
     --lightgreen: #7fffd4;
     --black: #23272a;
     /* End Layout colors */
-
+    
     /* Colors */
+    --grey: #f6f6f6;
     --header-blue: #255ee9;
     --dark-blue: #23272a;
     --violet: #7289da;
@@ -164,7 +164,7 @@ header {
 }
 
 /* MAIN */
-/* Blue section */
+/* Jumbotron */
 .jumbotron-section {
     background-image: url(../img/jumbo.png);
     background-size: cover;
@@ -202,11 +202,25 @@ header {
     border: var(--blackborder); */
 }
 
+.jumbo-buttons > div {
+    margin-right: 10px;
+}
+
 /* Channels section */
 .container.section-container{
     padding: 40px 0;
     /* debug
     border: var(--blackborder); */
+}
+
+/* Wave of the grey section */
+.wave {
+    filter: invert(100%) sepia(1%) saturate(94%) hue-rotate(17deg) brightness(115%) contrast(93%);
+    margin-bottom: -5px;
+}
+
+.wave-down {
+    transform: rotate(180deg);
 }
 
 /* Image column */
