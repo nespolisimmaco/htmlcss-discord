@@ -42,7 +42,7 @@ img {
 /* GENERAL */
 body {
     font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: white;
+    color: black;
 }
 
 .container {
@@ -113,6 +113,7 @@ body {
 header {
     height: 60px;
     padding: 10px;
+    color: white;
     /* debug */
     background-color: var(--header-blue);
 }
@@ -189,12 +190,15 @@ header {
 .jumbo h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    color: white;
 }
 
 .jumbo p {
     font-weight: 500;
     line-height: 1.7rem;
     font-size: 1.2rem;
+    color: white;
+
 }
 
 .jumbo {
@@ -230,14 +234,12 @@ header {
 }
 
 .secondary-col-section > h2 {
-    color: black;
     font-size: 3.5rem;
     text-align: left;
     margin-bottom: 2rem;
 }
 
 .secondary-col-section > p {
-    color: black;
     text-align: left;
     line-height: 1.5rem;
 }
@@ -253,7 +255,6 @@ header {
     border: var(--blackborder);
     width: 80%;
     margin: 0 auto;
-    color: black;
     text-align: center;
     /* debug
     min-height: 600px;
@@ -276,9 +277,10 @@ header {
 
 /* First Black section */
 .black-section {
-    /* debug */
     background-color: var(--black);
-    border: 2px solid white;
+    color: white;
+    /* debug
+    border: 2px solid white; */
 }
 
 .wrap {
@@ -286,22 +288,48 @@ header {
     border: var(--blackborder);
 }
 
-/* coral square */
-.coral {
+.wrap h3{
+    color: var(--violet);
+}
+/* Social column */
+.socials {
     width: 30%;
     /* debug */
     min-height: 500px;
-    background-color: var(--coral);
+    /* background-color: var(--coral); */
     border: var(--blackborder);
 }
 
-/* green square */
-.green {
+.socials h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.socials img {
+    width: 18px;
+}
+
+.social-icons > i {
+    margin: 10px 5px;
+}
+
+/* Infos column */
+.infos {
     width: calc((100% - 30%) / 4);
-    /* debug */
+    /* debug
     min-height: 500px;
     background-color: var(--green);
-    border: var(--whiteborder);
+    border: var(--whiteborder); */
+}
+
+.infos h3 {
+    font-size: .8rem;
+}
+
+.infos li {
+    list-style-type: none;
+    line-height: 2rem;
+    font-size: .8rem;
 }
 
 /* FOOTER */
