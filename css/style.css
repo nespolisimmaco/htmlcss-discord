@@ -19,7 +19,7 @@ img {
     --fuchsia: #ee82ee;
     --blue: #1e90ff;
     --pink: #ffc0cb;
-    --grey: #d3d3d3;
+    --grey: #f6f6f6;
     --darkgreen: #228b22;
     --coral: #f08080;
     --green: #20b2aa;
@@ -87,6 +87,17 @@ body {
 .dark-blue-button {
     background-color: var(--dark-blue);
     color: white;
+}
+
+.violet-button {
+    background-color: var(--violet);
+    color: white;
+    margin-top: 2rem;
+}
+
+.violet-button > a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .dark-blue-button > a {
@@ -202,20 +213,20 @@ header {
 /* Image column */
 .primary-col {
     width: 60%;
-    /* debug */
+    /* debug
     min-height: 500px;
     background-color: var(--blue);
-    border: var(--blackborder);
+    border: var(--blackborder); */
 }
 
 /* Text column */
 .secondary-col {
     width: 40%;
     padding: 20px;
-    /* debug */
+    /* debug
     min-height: 500px;
     background-color: var(--pink);
-    border: var(--blackborder);
+    border: var(--blackborder); */
 }
 
 .secondary-col-section > h2 {
@@ -237,12 +248,30 @@ header {
     background-color: var(--grey);
 }
 
-/* Dark green square */
-.dark-green {
-    /* debug */
+/* Video call section */
+.videocall {
+    border: var(--blackborder);
+    width: 80%;
+    margin: 0 auto;
+    color: black;
+    text-align: center;
+    /* debug
     min-height: 600px;
     border: var(--blackborder);
-    background-color: var(--darkgreen);
+    background-color: var(--darkgreen); */
+}
+
+.videocall-section > h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.videocall-section > p {
+    line-height: 1.3rem;
+}
+
+.ready-to-download img {
+    margin-bottom: -20px;
 }
 
 /* First Black section */
